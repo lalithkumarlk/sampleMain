@@ -1,0 +1,14 @@
+
+## To add submodule
+git submodule add url
+
+## To get lastest changes from submodules master branch
+git submodule update --remote --merge
+
+
+## Remove submodules
+git submodule deinit mysubmod
+git rm mysubmod
+git commit -m "Remove mysubmod"
+git push
+rm -rf .git/modules/mysubmod
