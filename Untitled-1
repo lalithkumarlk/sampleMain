@@ -12,3 +12,10 @@ git rm mysubmod
 git commit -m "Remove mysubmod"
 git push
 rm -rf .git/modules/mysubmod
+
+
+# add submodule to track master branch
+git submodule add -b branch_name URL_to_Git_repo optional_directory_rename
+
+# update your submodule
+git submodule update --remote 
